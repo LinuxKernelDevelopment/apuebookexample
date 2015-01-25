@@ -1,0 +1,7 @@
+INCLUDE=/home/hmsjwzb/apue.3e/include
+LIBRARY=/home/hmsjwzb/apue.3e/lib
+
+all:	my_ls
+
+%:	%.c
+	$(CC) -o $@ $@.c -I $(INCLUDE) -L $(LIBRARY) -lapue
