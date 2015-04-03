@@ -1,7 +1,7 @@
 INCLUDE=/home/hmsjwzb/apue.3e/include
 LIBRARY=/home/hmsjwzb/apue.3e/lib
 
-all:	my_ls my_cp1 my_cp2 getpid execlp error getuid_gid signal
+all:	4.2 4.5 mycp
 
 %:	%.c
 	$(CC) -o $@ $@.c -I $(INCLUDE) -L $(LIBRARY) -lapue
