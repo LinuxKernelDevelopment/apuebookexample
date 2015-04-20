@@ -1,7 +1,7 @@
 INCLUDE=/home/hmsjwzb/apue.3e/include
 LIBRARY=/home/hmsjwzb/apue.3e/lib
 
-all: 14-1
+all: 14-1 14-7 14-12
 
 %:	%.c
 	$(CC) -o $@ $@.c -I $(INCLUDE) -L $(LIBRARY) -lapue -lrt -lbsd
