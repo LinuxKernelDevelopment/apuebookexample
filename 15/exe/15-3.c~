@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int
+main(void)
+{
+	FILE *fout;
+
+	fout = popen("ls", "w");
+	dup2(fout, STDOUT_FILENO);
+
+	return 0;
+}
